@@ -3,7 +3,12 @@ from paddles import Paddle
 
 screen = Screen()
 line = Turtle()
-paddle_one = Paddle()
+right_paddle = Paddle()
+left_paddle = Paddle()
+
+
+right_paddle.setup(350)
+left_paddle.setup(-350) 
 
 screen.screensize(800, 600)
 screen.bgcolor("black")
@@ -31,8 +36,9 @@ create_dotted_line()
 
 
 
-screen.onkeypress(paddle_one.move_up, "Up")
-screen.onkeypress(paddle_one.move_down, "Down")
+screen.onkeypress(left_paddle.move_up, "Up")
+screen.onkeypress(left_paddle.move_down, "Down")
+
 screen.listen()
 
 
