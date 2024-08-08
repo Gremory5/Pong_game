@@ -10,8 +10,7 @@ class Paddle(Turtle):
         self.color("white")
         self.width(20)
         self.shapesize(stretch_wid=None, stretch_len=5)
-        self.settiltangle(90)
-        self.setposition(-350,0)
+        
 
     
     def setup(self, x_position):
