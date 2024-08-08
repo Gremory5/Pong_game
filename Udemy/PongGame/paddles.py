@@ -17,6 +17,14 @@ class Paddle(Turtle):
         self.penup()
         self.goto(x_position, 0)
         self.setheading(90)
+        self.shapesize(stretch_wid=None, stretch_len=5)
+        
+
+    
+    def setup(self, x_position):
+        self.penup()
+        self.goto(x_position, 0)
+        self.setheading(90)
         
 
 
