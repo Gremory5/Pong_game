@@ -3,7 +3,9 @@ from paddles import Paddle
 
 screen = Screen()
 line = Turtle()
-paddle_one = Paddle()
+right_paddle = Paddle()
+left_paddle = Paddle()
+
 
 screen.screensize(800, 600)
 screen.bgcolor("black")
