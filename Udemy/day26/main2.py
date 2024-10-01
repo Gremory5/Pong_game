@@ -1,0 +1,61 @@
+""" with open("file1.txt") as file1:
+    file1_data = file1.readlines()
+with open("file2.txt") as file2:
+    file2_data = file2.readlines()
+
+list1 = [int(num) for num in file1_data]
+list2 = [int(num) for num in file2_data]
+
+
+result = [num for num in list1 if num in list2]
+
+print(result) """
+
+
+students_scores = {
+    "Alex": 89,
+    "Beth": 98,
+    "Caroline": 76,
+    "Dave": 99,
+    "Eleanor": 88,
+    "Freddie": 74,
+}
+
+
+""" sentence = "What is the Airspeed Velocity of an Unladen Swallow?"
+result = [n for n in sentence.split()]
+print(result)
+ """
+
+#For Loop
+numbers = [1, 2, 3]
+new_list = []
+for n in numbers:
+    add_1 = n + 1
+    new_list.append(add_1)
+
+#List Comprehension
+new_list = [n + 1 for n in numbers]
+
+#String as List
+name = "Angela"
+letters_list = [letter for letter in name]
+
+#Range as List
+range_list = [n * 2 for n in range(1, 5)]
+
+#Conditional List Comprenhension
+names = ["Alex", "Beth", "Caroline", "Dave", "Elanor", "Freddie"]
+short_names = [name for name in names if len(name) < 5]
+
+upper_case_names = [name.upper() for name in names if len(name) > 4]
+
+#Dictionary Comprehension
+import random
+student_grades = {name: random.randint(1, 100) for name in names}
+print(student_grades)
+
+passed_students = {
+    student: grade
+    for (student, grade) in student_grades.items() if grade >= 60
+}
