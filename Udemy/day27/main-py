@@ -1,0 +1,22 @@
+import tkinter as tk
+
+window = tk.Tk()
+window.title("My GUI")
+window.minsize(width=500, height=300)
+
+#create some component like label
+
+
+my_label = tk.Label(text="label", font=("Arial", 32))
+my_label.pack()
+
+
+
+
+
+
+
+
+
+
+window.mainloop() # Deve stare sempre alla fine del codice
